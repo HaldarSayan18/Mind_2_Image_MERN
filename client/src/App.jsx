@@ -2,8 +2,8 @@ import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme } from './utils/Theme.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
-import CreatePost from './pages/CreatePost.js';
-import Navbar from './components/Navbar.js';
+import CreatePost from './pages/CreatePost.jsx';
+import Navbar from './components/Navbar.jsx';
 
 const Container = styled.div`
   width:100vw;
