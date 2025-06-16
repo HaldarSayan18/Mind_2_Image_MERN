@@ -1,0 +1,9 @@
+.navbar-header-text {
+    text-decoration-color: color-mix(in srgb, red 60, yellow 40);
+}
+
+@media only screen and (max-width:600px) {
+    .navbar-header-text {
+        font-size: 1.4rem;
+    }
+}

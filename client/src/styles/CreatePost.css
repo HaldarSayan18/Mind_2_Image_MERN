@@ -1,4 +1,107 @@
-.main-container {
+.post-container {
     height: 100%;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
     overflow-y: scroll;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #090917d3;
+    /* border: 1px solid blue; */
+}
+
+
+/* ImgGenetorForm styling */
+.img-generator-form {
+    flex: 1;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .title {
+            font-size: 28px;
+            font-weight: 500;
+            color: #F2F3F4;
+        }
+
+        .desc {
+            font-size: 18px;
+            font-weight: 400;
+            color: #b1b2b3;
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #b1b2b3;
+
+        textarea {
+            color: #F2F3F4;
+            padding-left: 10px;
+            font-size: 1.2rem;
+            background: transparent;
+            border: 2px solid #1975d1;
+            border-radius: 5px;
+            font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            font-weight: 500;
+            letter-spacing: 0px;
+        }
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        gap: 8px;
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+    }
+}
+
+/* generated image syling */
+.generated-img-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    border-left-color: blue;
+    border-right-color: green;
+    border-bottom-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 300px;
+    min-width: 500px;
+
+    .generated-img {
+        width: 100%;
+        height: inherit;
+        max-height: 100%;
+        object-fit: cover;
+        background-color: black;
+        border-radius: 10px;
+    }
 }

@@ -4,38 +4,32 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import CreatePost from './pages/CreatePost.jsx';
 import Navbar from './components/Navbar.jsx';
+import Layout from './pages/Layout.jsx';
 
 const Container = styled.div`
-  width:100vw;
-  height:100vh;
-  display:flex;
+  width:98.9vw;
+  height:100%;
   overflow-x:hidden;
   overflow-y:hidden;
-  background:${({ theme }) => theme.bg};
-  color:${({ theme }) => theme.text_primary};
-`
-const Wrapper = styled.div`
-  height:100%;
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  flex:3,
-  justify-content:center;
+  overflow: hidden;
+  // background:${({ theme }) => theme.bg};
+  // color:${({ theme }) => theme.text_primary};
 `
 
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Container>
-        <Wrapper>
+        {/* <Wrapper> */}
           <BrowserRouter>
-            <Navbar />
+            {/* <Navbar /> */}
             <Routes>
+              {/* <Route path='/' element={<Layout />} /> */}
               <Route path='/' element={<HomePage />} />
               <Route path='/post' element={<CreatePost />} />
             </Routes>
           </BrowserRouter>
-        </Wrapper>
+        {/* </Wrapper> */}
       </Container>
     </ThemeProvider>
   );
